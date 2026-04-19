@@ -4,8 +4,8 @@ export function Slide9Process() {
   const steps = [
     { n: "1", title: "Cadrage", desc: "Analyse de votre pipeline et de votre base de contacts" },
     { n: "2", title: "Configuration", desc: "Connexion des outils et paramétrage des automatisations" },
-    { n: "3", title: "Production", desc: "Lancement, tests, premiers messages envoyés", badge: "J+3" },
-    { n: "4", title: "Suivi", desc: "Support continu, ajustements, résultats mesurés à J+30" },
+    { n: "3", title: "Production", desc: "Lancement, tests, premiers messages envoyés", badge: "J+5" },
+    { n: "4", title: "Suivi", desc: "Support continu, ajustements, résultats mesurés à J+30", badge: "J+7" },
   ];
 
   return (
@@ -15,7 +15,7 @@ export function Slide9Process() {
       </div>
 
       <h2 className="mb-20 max-w-5xl text-center text-4xl font-semibold leading-tight text-white md:text-5xl">
-        Mise en production en 3 jours. Sans friction.
+        Opérationnel en 7 jours. Sans friction.
       </h2>
 
       <div className="relative w-full max-w-6xl">
