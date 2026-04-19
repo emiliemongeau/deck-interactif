@@ -22,7 +22,7 @@ export function Slide8Roi() {
       </div>
 
       <a
-        href="https://chantier-roi.lovable.app"
+        href="https://simulateurs-roi.lovable.app"
         target="_blank"
         rel="noopener noreferrer"
         className="group mt-12 inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-semibold text-[var(--nexora-bg)] shadow-[var(--glow-cyan)] transition hover:scale-105"
