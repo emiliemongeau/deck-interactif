@@ -8,19 +8,11 @@ import { Slide5Solution } from "./slides/Slide5Solution";
 import { Slide6Demo } from "./slides/Slide6Demo";
 import { Slide7Resultats } from "./slides/Slide7Resultats";
 import { Slide8Roi } from "./slides/Slide8Roi";
+import { Slide9Process } from "./slides/Slide9Process";
+import { Slide10Pricing } from "./slides/Slide10Pricing";
+import { Slide11Closing } from "./slides/Slide11Closing";
 
 const TOTAL = 11;
-
-function Placeholder({ n }: { n: number }) {
-  return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-white/40">
-      <div className="text-sm uppercase tracking-[0.4em] text-[var(--nexora-cyan)]/60">
-        À venir
-      </div>
-      <div className="mt-4 text-7xl font-black text-white/20">Slide {n}</div>
-    </div>
-  );
-}
 
 const slides = [
   () => <Slide1Recap />,
@@ -31,7 +23,9 @@ const slides = [
   () => <Slide6Demo />,
   () => <Slide7Resultats />,
   () => <Slide8Roi />,
-  ...Array.from({ length: TOTAL - 8 }, (_, i) => () => <Placeholder n={i + 9} />),
+  () => <Slide9Process />,
+  () => <Slide10Pricing />,
+  () => <Slide11Closing />,
 ];
 
 export function Presentation() {
