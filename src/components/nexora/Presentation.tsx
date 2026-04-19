@@ -4,6 +4,10 @@ import { Slide1Recap } from "./slides/Slide1Recap";
 import { Slide2Chiffre } from "./slides/Slide2Chiffre";
 import { Slide3Cout } from "./slides/Slide3Cout";
 import { Slide4Cause } from "./slides/Slide4Cause";
+import { Slide5Solution } from "./slides/Slide5Solution";
+import { Slide6Demo } from "./slides/Slide6Demo";
+import { Slide7Resultats } from "./slides/Slide7Resultats";
+import { Slide8Roi } from "./slides/Slide8Roi";
 
 const TOTAL = 11;
 
@@ -23,7 +27,11 @@ const slides = [
   () => <Slide2Chiffre />,
   () => <Slide3Cout />,
   () => <Slide4Cause />,
-  ...Array.from({ length: TOTAL - 4 }, (_, i) => () => <Placeholder n={i + 5} />),
+  () => <Slide5Solution />,
+  () => <Slide6Demo />,
+  () => <Slide7Resultats />,
+  () => <Slide8Roi />,
+  ...Array.from({ length: TOTAL - 8 }, (_, i) => () => <Placeholder n={i + 9} />),
 ];
 
 export function Presentation() {
