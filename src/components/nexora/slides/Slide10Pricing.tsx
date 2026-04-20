@@ -131,6 +131,12 @@ export function Slide10Pricing() {
             >
               {p.cta}
             </button>
+
+            {p.note && (
+              <p className="mt-3 text-[10px] leading-relaxed text-white/45">
+                {p.note}
+              </p>
+            )}
           </div>
         ))}
       </div>
