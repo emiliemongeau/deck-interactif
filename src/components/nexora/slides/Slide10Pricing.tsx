@@ -11,6 +11,7 @@ type Plan = {
   features: string[];
   cta: string;
   highlighted?: boolean;
+  note?: string;
 };
 
 const plans: Plan[] = [
@@ -18,19 +19,19 @@ const plans: Plan[] = [
     title: "Standard",
     badge: "Le plus populaire",
     badgeTint: "cyan",
-    priceMain: "3 000 €",
+    priceMain: "2 500 €",
     priceSub: "setup + 400 € / mois",
-    priceStrike: "3 500 €",
+    priceStrike: "3 000 €",
     features: [
       "Module CA dormant",
       "Relances devis automatisées",
-      "Suivi clients dormants",
-      "Alertes SAV",
+      "Réactivation clients dormants",
       "Tableau de bord commercial",
       "Formation & onboarding",
     ],
     cta: "Démarrer",
     highlighted: true,
+    note: "Prix préférentiel sous conditions : confirmation sous 7 jours · 1 témoignage vidéo · 2 recommandations qualifiées",
   },
   {
     title: "Expert",
@@ -38,9 +39,11 @@ const plans: Plan[] = [
     priceSub: "setup + 500 € / mois",
     features: [
       "Tout le Standard",
-      "Séquences de nurturing clients",
-      "Reporting avancé",
-      "Optimisation continue sur 6 mois",
+      "Pilotage par message Telegram : envoyez une instruction, le système l'exécute",
+      "Optimisation autonome : l'IA ajuste vos séquences selon les résultats",
+      "Alertes proactives intelligentes : analyse + recommandation en temps réel",
+      "Reporting instantané par message, sans ouvrir de dashboard",
+      "Accompagnement 6 mois inclus",
     ],
     cta: "Démarrer",
   },
@@ -128,6 +131,12 @@ export function Slide10Pricing() {
             >
               {p.cta}
             </button>
+
+            {p.note && (
+              <p className="mt-3 text-[10px] leading-relaxed text-white/45">
+                {p.note}
+              </p>
+            )}
           </div>
         ))}
       </div>
