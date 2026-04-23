@@ -9,16 +9,18 @@ export function Slide8Roi() {
       </div>
 
       <p className="max-w-5xl text-center text-3xl font-light leading-snug text-white md:text-4xl">
-        Sur votre base : <Bracket>X</Bracket> devis/mois × panier moyen{" "}
-        <Bracket>X</Bracket>€
+        Sur votre base :{" "}
+        <span className="mx-1 inline-flex items-center rounded-md border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 font-semibold text-[var(--nexora-cyan)]">20</span>{" "}
+        devis/mois × panier moyen{" "}
+        <span className="mx-1 inline-flex items-center rounded-md border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 font-semibold text-[var(--nexora-cyan)]">8 000</span>€
       </p>
 
       <div className="mt-14 flex w-full max-w-5xl flex-col items-stretch gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm md:flex-row md:items-center md:justify-between md:gap-6 md:p-8">
-        <RoiStep label="Investissement" value="3 000€" />
+        <RoiStep label="Investissement" value="2 500€" />
         <ArrowRight className="hidden h-6 w-6 text-white/30 md:block" />
-        <RoiStep label="Retour estimé" value={<Bracket>X</Bracket>} suffix="€" />
+        <RoiStep label="Retour estimé" value="12 000€" highlight />
         <ArrowRight className="hidden h-6 w-6 text-white/30 md:block" />
-        <RoiStep label="ROI en" value={<Bracket>X</Bracket>} suffix=" semaines" highlight />
+        <RoiStep label="ROI en" value="8" suffix=" semaines" highlight />
       </div>
 
       <a
@@ -39,14 +41,6 @@ export function Slide8Roi() {
   );
 }
 
-function Bracket({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="mx-1 inline-flex items-center rounded-md border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 font-semibold text-[var(--nexora-cyan)]">
-      [{children}]
-    </span>
-  );
-}
-
 function RoiStep({
   label,
   value,
@@ -54,7 +48,7 @@ function RoiStep({
   highlight,
 }: {
   label: string;
-  value: React.ReactNode;
+  value: string;
   suffix?: string;
   highlight?: boolean;
 }) {

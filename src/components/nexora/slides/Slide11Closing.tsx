@@ -18,14 +18,14 @@ export function Slide11Closing() {
           >
             Cette semaine
           </button>
-          <span className="text-sm font-medium text-[var(--nexora-cyan)]">Offre 2 500€</span>
+          <span className="text-sm font-medium text-[var(--nexora-cyan)]">Offre Booster — 2 500€</span>
         </div>
 
         <div className="flex flex-col items-center gap-2">
           <button className="rounded-full border border-white/30 px-10 py-5 text-lg font-semibold text-white transition hover:border-white/60 hover:bg-white/5">
             Dans les prochains jours
           </button>
-          <span className="text-sm text-white/55">Offre 3 000€</span>
+          <span className="text-sm text-white/55">Offre Agentique — 4 000€</span>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ export function Slide11Closing() {
           <span className="mx-2 text-white/30">•</span>{" "}
           www.nexora-ia.fr
         </p>
-        <p className="text-xs italic text-white/40">Je vous envoie le contrat aujourd’hui.</p>
+        <p className="text-xs italic text-white/40">Je vous envoie le contrat aujourd'hui.</p>
       </div>
     </SlideShell>
   );
