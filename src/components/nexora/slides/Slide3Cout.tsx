@@ -2,9 +2,9 @@ import { SlideShell } from "../SlideShell";
 
 export function Slide3Cout() {
   const lines = [
-    { text: "5 devis/semaine × 42 semaines", result: "210 devis/an" },
-    { text: "50% non relancés", result: "105 devis dormants" },
-    { text: "Panier moyen 8 000€", result: "~25 000€ de CA récupérable/an" },
+    { text: "15 devis/semaine × 42 semaines", result: "630 devis/an" },
+    { text: "50% non relancés", result: "315 devis dormants" },
+    { text: "Panier moyen 8 000€", result: "~75 000€ de CA récupérable/an" },
   ];
 
   return (
