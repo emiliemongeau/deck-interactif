@@ -2,9 +2,9 @@ import { SlideShell } from "../SlideShell";
 
 export function Slide0Infra() {
   const departments = [
-    { title: "Équipe commerciale", tools: ["GHL", "LinkedIn"] },
+    { title: "Équipe commerciale", tools: ["GHL", "LinkedIn", "PRODEVIS"] },
     { title: "Production / Atelier", tools: ["n8n", "Notion"] },
-    { title: "Équipe de pose", tools: ["Slack", "Google Calendar"] },
+    { title: "Équipe de pose", tools: ["OBAT", "Google Calendar"] },
     { title: "Finances / Compta", tools: ["Pennylane", "PayPal"] },
     { title: "Achats / Appro", tools: ["n8n", "Notion"] },
     { title: "RH", tools: ["Notion", "Slack"] },
@@ -28,14 +28,26 @@ export function Slide0Infra() {
 
         {/* Niveau 2 */}
         <div className="flex items-center gap-6">
-          <Node label="Hermès Agent" tint="purple" />
+          <Node
+            label="Le Chauffeur Agent"
+            sublabel="navigation, outils, mémoire, exécution · s'auto-améliore"
+            tint="purple"
+          />
           <div className="h-[2px] w-16 bg-gradient-to-r from-[var(--nexora-purple)] to-[var(--nexora-cyan)]" />
-          <Node label="Data OS" sublabel="source de vérité" tint="cyan" />
+          <Node
+            label="Data OS"
+            sublabel="toutes les infos de l'entreprise centralisées"
+            tint="cyan"
+          />
         </div>
         <Connector />
 
         {/* Niveau 3 */}
-        <Node label="Claude Code" tint="purple" />
+        <Node
+          label="Le Moteur"
+          sublabel="puissance brute du raisonnement et du langage"
+          tint="purple"
+        />
 
         {/* Branches */}
         <div className="relative h-6 w-full max-w-6xl">
