@@ -7,13 +7,13 @@ export function Slide5Solution() {
       n: "01",
       icon: <Database className="h-7 w-7" />,
       title: "Réactivation BDD",
-      sub: "Vos contacts dormants reçoivent un WhatsApp ou email automatique",
+      sub: "Vos contacts dormants reçoivent un message automatique",
     },
     {
       n: "02",
       icon: <RefreshCw className="h-7 w-7" />,
       title: "Relance devis",
-      sub: "Vos devis ProDevis sans réponse sont relancés automatiquement",
+      sub: "Vos devis sans réponse sont relancés sans que vous y touchiez",
     },
     {
       n: "03",

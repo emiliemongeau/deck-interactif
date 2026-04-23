@@ -10,7 +10,8 @@ export function Slide1Recap() {
 
       <p className="max-w-5xl text-center text-3xl font-light leading-snug text-white md:text-4xl lg:text-5xl">
         “Vous envoyez environ{" "}
-        <span className="font-semibold text-[var(--nexora-cyan)]">15 à 25 devis</span> par mois. Une partie reste sans réponse. Les relances ne sont pas systématiques. Et ça vous coûte du{" "}
+        <span className="font-semibold text-[var(--nexora-cyan)]">[X] devis</span> par mois. Une
+        partie reste sans réponse. Les relances ne sont pas systématiques. Et ça vous coûte du{" "}
         <span className="font-semibold text-[var(--nexora-purple)]">
           chiffre d’affaires déjà engagé
         </span>

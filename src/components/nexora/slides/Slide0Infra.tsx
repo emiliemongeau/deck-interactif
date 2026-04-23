@@ -2,12 +2,12 @@ import { SlideShell } from "../SlideShell";
 
 export function Slide0Infra() {
   const departments = [
-    { title: "Équipe commerciale", tools: ["GHL", "ProDevis"] },
-    { title: "Production / Atelier", tools: ["n8n", "ProDevis"] },
-    { title: "Équipe de pose", tools: ["WhatsApp", "Obat"] },
+    { title: "Équipe commerciale", tools: ["GHL", "LinkedIn"] },
+    { title: "Production / Atelier", tools: ["n8n", "Notion"] },
+    { title: "Équipe de pose", tools: ["Slack", "Google Calendar"] },
     { title: "Finances / Compta", tools: ["Pennylane", "PayPal"] },
     { title: "Achats / Appro", tools: ["n8n", "Notion"] },
-    { title: "RH", tools: ["Notion", "WhatsApp"] },
+    { title: "RH", tools: ["Notion", "Slack"] },
   ];
 
   return (
