@@ -11,12 +11,12 @@ import { Slide5Solution } from "./slides/Slide5Solution";
 import { Slide6Demo } from "./slides/Slide6Demo";
 import { Slide6bOrchestration } from "./slides/Slide6bOrchestration";
 import { Slide7Resultats } from "./slides/Slide7Resultats";
-import { Slide8Roi } from "./slides/Slide8Roi";
+
 import { Slide9Process } from "./slides/Slide9Process";
 import { Slide10Pricing } from "./slides/Slide10Pricing";
 import { Slide11Closing } from "./slides/Slide11Closing";
 
-const TOTAL = 15;
+const TOTAL = 14;
 
 const slides = [
   () => <Slide0Vision />,
@@ -30,7 +30,6 @@ const slides = [
   () => <Slide6Demo />,
   () => <Slide6bOrchestration />,
   () => <Slide7Resultats />,
-  () => <Slide8Roi />,
   () => <Slide9Process />,
   () => <Slide10Pricing />,
   () => <Slide11Closing />,
