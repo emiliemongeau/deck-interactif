@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { SlideShell } from "../SlideShell";
 
 export function Slide7Resultats() {
