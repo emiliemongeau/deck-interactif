@@ -3,7 +3,7 @@ import { SlideShell } from "../SlideShell";
 export function Slide7Resultats() {
   const stats = [
     { n: "J+7", sub: "Système opérationnel" },
-    { n: "+15 à 25%", sub: "de devis transformés en chantiers" },
+    { n: "+10 à 25%", sub: "de devis transformés en chantiers" },
     { n: "+2 à 3%", sub: "de réactivation sur base dormante" },
     { n: "J+30-90", sub: "Premiers résultats visibles selon votre cycle commercial" },
   ];
