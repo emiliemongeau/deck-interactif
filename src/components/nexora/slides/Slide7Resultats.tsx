@@ -44,11 +44,22 @@ export function Slide7Resultats() {
         ))}
       </div>
 
-      <p className="mt-16 max-w-4xl text-center text-xl font-light text-white/65 md:text-2xl">
+      <p className="mt-12 max-w-4xl text-center text-xl font-light text-white/65 md:text-2xl">
         Sans nouveau commercial.{" "}
         <span className="text-white">Sans budget pub.</span>{" "}
         Sans changer votre façon de travailler.
       </p>
+
+      <a
+        href="https://simulateurs-roi.lovable.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group mt-10 inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-semibold text-[var(--nexora-bg)] shadow-[var(--glow-cyan)] transition hover:scale-105"
+        style={{ background: "var(--gradient-accent)" }}
+      >
+        Calculer mon ROI
+        <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
+      </a>
     </SlideShell>
   );
 }
