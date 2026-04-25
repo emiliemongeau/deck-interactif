@@ -18,7 +18,7 @@ export function Slide11Closing() {
           >
             Cette semaine
           </button>
-          <span className="text-sm font-medium text-[var(--nexora-cyan)]">Offre 2 500€</span>
+          <span className="text-sm font-medium text-[var(--nexora-cyan)]">Offre 2 000€</span>
         </div>
 
         <div className="flex flex-col items-center gap-2">
