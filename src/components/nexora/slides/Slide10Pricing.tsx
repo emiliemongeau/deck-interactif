@@ -166,15 +166,6 @@ export function Slide10Pricing() {
                   ))}
                 </ul>
 
-                <button
-                  className={`mt-auto rounded-lg py-2.5 text-sm font-semibold transition ${
-                    p.highlighted
-                      ? "bg-gradient-to-r from-[var(--nexora-cyan)] to-[var(--nexora-purple)] text-white shadow-[var(--glow-cyan)] hover:opacity-90"
-                      : "border border-white/15 bg-white/5 text-white hover:border-[var(--nexora-cyan)]/50 hover:text-[var(--nexora-cyan)]"
-                  }`}
-                >
-                  {p.cta}
-                </button>
               </div>
 
               {p.note && (
