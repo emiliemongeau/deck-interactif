@@ -17,8 +17,9 @@ export function Slide0Entree() {
         <span className="font-semibold text-white">CA dormant</span>.
       </p>
 
-      <p className="mt-16 text-2xl font-medium text-[var(--nexora-cyan)] md:text-3xl">
-        → Votre CA dormant vous attend.
+      <p className="mt-12 max-w-4xl text-center text-xl font-medium leading-relaxed text-[var(--nexora-cyan)] md:text-2xl">
+        → Récupérez 3 à 12 chantiers supplémentaires en 60 jours — sans prospecter
+        davantage, en activant uniquement ce qui dort déjà dans votre base.
       </p>
     </SlideShell>
   );
