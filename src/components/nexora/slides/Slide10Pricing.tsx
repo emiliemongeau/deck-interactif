@@ -61,9 +61,8 @@ const plans: Plan[] = [
     step: "03",
     stepLabel: "Passer à l'échelle",
     title: "Premium",
-    badge: "Sur mesure",
-    badgeTint: "purple",
     priceMain: "À partir de 10 000 €",
+    priceSub: "Sur mesure",
     features: [
       "Infrastructure IA multi-départements",
       "Commerciale, production, SAV",
