@@ -20,6 +20,8 @@ type Plan = {
 
 const plans: Plan[] = [
   {
+    step: "01",
+    stepLabel: "Démarrer",
     title: "Booster",
     priceMain: "2 000 €",
     priceStrike: "3 000 €",
@@ -37,6 +39,8 @@ const plans: Plan[] = [
     size: "sm",
   },
   {
+    step: "02",
+    stepLabel: "Monter en puissance",
     title: "L'agentique",
     badge: "Le plus populaire",
     badgeTint: "cyan",
@@ -56,6 +60,8 @@ const plans: Plan[] = [
     size: "md",
   },
   {
+    step: "03",
+    stepLabel: "Passer à l'échelle",
     title: "Premium",
     badge: "Sur mesure",
     badgeTint: "purple",
