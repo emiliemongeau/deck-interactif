@@ -3,7 +3,6 @@ import { SlideShell } from "../SlideShell";
 
 export function Slide7Resultats() {
   const stats = [
-    { n: "J+7", sub: "Système opérationnel" },
     { n: "+10 à 25%", sub: "de devis transformés en chantiers" },
     { n: "+2 à 3%", sub: "de réactivation sur base dormante" },
     { n: "J+30-90", sub: "Premiers résultats visibles selon votre cycle commercial" },
@@ -15,7 +14,7 @@ export function Slide7Resultats() {
         Résultats attendus
       </div>
 
-      <div className="grid w-full max-w-7xl grid-cols-2 gap-6 md:grid-cols-4">
+      <div className="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-3">
         {stats.map((s, i) => (
           <div
             key={i}
