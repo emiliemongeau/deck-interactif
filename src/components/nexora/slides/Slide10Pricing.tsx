@@ -42,8 +42,6 @@ const plans: Plan[] = [
     step: "02",
     stepLabel: "Monter en puissance",
     title: "L'agentique",
-    badge: "Le plus populaire",
-    badgeTint: "cyan",
     priceMain: "4 000 €",
     priceSub: "setup + 300 € / mois",
     priceExtra: "Commission NEXORA 5% du CA généré",
@@ -85,27 +83,27 @@ export function Slide10Pricing() {
         Investissement
       </div>
 
-      <h2 className="mb-10 max-w-4xl text-center text-3xl font-semibold text-white md:text-4xl">
+      <h2 className="mb-8 max-w-4xl text-center text-3xl font-semibold text-white md:text-4xl">
         Choisissez votre niveau d'infrastructure
       </h2>
 
-      <div className="relative grid w-full max-w-6xl grid-cols-3 items-end gap-5">
+      <div className="relative flex w-full max-w-7xl items-end justify-center gap-4">
         {plans.map((p, idx) => {
           const sizeClasses =
             p.size === "sm"
-              ? "scale-[0.9] p-5"
+              ? "w-[300px] min-h-[500px] p-5"
               : p.size === "md"
-                ? "scale-100 p-6"
-                : "scale-[1.05] p-7";
+                ? "w-[350px] min-h-[570px] p-6"
+                : "w-[400px] min-h-[650px] p-7";
           const titleSize =
             p.size === "sm" ? "text-lg" : p.size === "md" ? "text-xl" : "text-2xl";
           const priceSize =
             p.size === "sm" ? "text-2xl" : p.size === "md" ? "text-3xl" : "text-4xl";
 
           return (
-            <div key={p.title} className="relative flex flex-col gap-3">
+            <div key={p.title} className="relative flex flex-col items-center gap-3">
               {idx > 0 && (
-                <div className="pointer-events-none absolute -left-5 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 md:block">
+                <div className="pointer-events-none absolute -left-4 top-[46%] z-10 hidden -translate-x-1/2 -translate-y-1/2 md:block">
                   <ArrowRight className="h-6 w-6 text-[var(--nexora-cyan)]/70" />
                 </div>
               )}
@@ -118,7 +116,7 @@ export function Slide10Pricing() {
                 </span>
               </div>
               <div
-                className={`relative flex flex-col rounded-2xl border backdrop-blur-sm origin-bottom ${sizeClasses} ${
+                className={`relative flex flex-col rounded-2xl border backdrop-blur-sm ${sizeClasses} ${
                   p.highlighted
                     ? "border-[var(--nexora-cyan)]/50 bg-gradient-to-b from-[var(--nexora-cyan)]/[0.08] to-white/[0.02] shadow-[var(--glow-cyan)]"
                     : "border-white/10 bg-white/[0.03]"
@@ -180,8 +178,8 @@ export function Slide10Pricing() {
               </div>
 
               {p.note && (
-                <div className="rounded-xl border border-[var(--nexora-cyan)]/30 bg-[var(--nexora-cyan)]/[0.06] p-3">
-                  <p className="text-xs leading-relaxed text-white/80">
+                <div className="w-[300px] rounded-xl border border-[var(--nexora-cyan)]/30 bg-[var(--nexora-cyan)]/[0.06] p-3">
+                  <p className="text-sm leading-relaxed text-white/80">
                     <span className="font-semibold text-[var(--nexora-cyan)]">Conditions :</span>{" "}
                     {p.note.replace("Prix préférentiel sous conditions : ", "")}
                   </p>
