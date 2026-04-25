@@ -91,10 +91,10 @@ export function Slide10Pricing() {
         {plans.map((p, idx) => {
           const sizeClasses =
             p.size === "sm"
-              ? "w-[300px] min-h-[500px] p-5"
+              ? "w-[270px] min-h-[440px] p-5"
               : p.size === "md"
-                ? "w-[350px] min-h-[570px] p-6"
-                : "w-[400px] min-h-[650px] p-7";
+                ? "w-[340px] min-h-[560px] p-6"
+                : "w-[420px] min-h-[680px] p-7";
           const titleSize =
             p.size === "sm" ? "text-lg" : p.size === "md" ? "text-xl" : "text-2xl";
           const priceSize =
@@ -103,8 +103,8 @@ export function Slide10Pricing() {
           return (
             <div key={p.title} className="relative flex flex-col items-center gap-3">
               {idx > 0 && (
-                <div className="pointer-events-none absolute -left-4 top-[46%] z-10 hidden -translate-x-1/2 -translate-y-1/2 md:block">
-                  <ArrowRight className="h-6 w-6 text-[var(--nexora-cyan)]/70" />
+                <div className="pointer-events-none absolute -left-3 top-[44%] z-10 hidden -translate-x-1/2 -translate-y-1/2 md:flex items-center gap-0.5 animate-pulse">
+                  <ChevronsRight className="h-9 w-9 text-[var(--nexora-cyan)] drop-shadow-[0_0_8px_var(--nexora-cyan)]" strokeWidth={2.5} />
                 </div>
               )}
               <div className="flex items-center justify-center gap-2">
