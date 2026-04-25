@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Slide0Vision } from "./slides/Slide0Vision";
 import { Slide0Infra } from "./slides/Slide0Infra";
 import { Slide0Entree } from "./slides/Slide0Entree";
+import { Slide2bAncrage } from "./slides/Slide2bAncrage";
 import { Slide1Recap } from "./slides/Slide1Recap";
 import { Slide2Chiffre } from "./slides/Slide2Chiffre";
 import { Slide3Cout } from "./slides/Slide3Cout";
@@ -16,12 +17,13 @@ import { Slide9Process } from "./slides/Slide9Process";
 import { Slide10Pricing } from "./slides/Slide10Pricing";
 import { Slide11Closing } from "./slides/Slide11Closing";
 
-const TOTAL = 14;
+const TOTAL = 15;
 
 const slides = [
   () => <Slide0Vision />,
   () => <Slide0Infra />,
   () => <Slide0Entree />,
+  () => <Slide2bAncrage />,
   () => <Slide1Recap />,
   () => <Slide2Chiffre />,
   () => <Slide3Cout />,
