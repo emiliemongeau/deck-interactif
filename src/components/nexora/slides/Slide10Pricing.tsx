@@ -1,7 +1,9 @@
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { SlideShell } from "../SlideShell";
 
 type Plan = {
+  step: string;
+  stepLabel: string;
   title: string;
   badge?: string;
   badgeTint?: "cyan" | "purple";
