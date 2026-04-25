@@ -1,4 +1,4 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ChevronsRight } from "lucide-react";
 import { SlideShell } from "../SlideShell";
 
 type Plan = {
