@@ -1,7 +1,9 @@
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { SlideShell } from "../SlideShell";
 
 type Plan = {
+  step: string;
+  stepLabel: string;
   title: string;
   badge?: string;
   badgeTint?: "cyan" | "purple";
@@ -18,6 +20,8 @@ type Plan = {
 
 const plans: Plan[] = [
   {
+    step: "01",
+    stepLabel: "Démarrer",
     title: "Booster",
     priceMain: "2 000 €",
     priceStrike: "3 000 €",
@@ -35,6 +39,8 @@ const plans: Plan[] = [
     size: "sm",
   },
   {
+    step: "02",
+    stepLabel: "Monter en puissance",
     title: "L'agentique",
     badge: "Le plus populaire",
     badgeTint: "cyan",
@@ -54,6 +60,8 @@ const plans: Plan[] = [
     size: "md",
   },
   {
+    step: "03",
+    stepLabel: "Passer à l'échelle",
     title: "Premium",
     badge: "Sur mesure",
     badgeTint: "purple",
@@ -81,8 +89,8 @@ export function Slide10Pricing() {
         Choisissez votre niveau d'infrastructure
       </h2>
 
-      <div className="grid w-full max-w-6xl grid-cols-3 items-end gap-5">
-        {plans.map((p) => {
+      <div className="relative grid w-full max-w-6xl grid-cols-3 items-end gap-5">
+        {plans.map((p, idx) => {
           const sizeClasses =
             p.size === "sm"
               ? "scale-[0.9] p-5"
@@ -95,7 +103,20 @@ export function Slide10Pricing() {
             p.size === "sm" ? "text-2xl" : p.size === "md" ? "text-3xl" : "text-4xl";
 
           return (
-            <div key={p.title} className="flex flex-col gap-3">
+            <div key={p.title} className="relative flex flex-col gap-3">
+              {idx > 0 && (
+                <div className="pointer-events-none absolute -left-5 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 md:block">
+                  <ArrowRight className="h-6 w-6 text-[var(--nexora-cyan)]/70" />
+                </div>
+              )}
+              <div className="flex items-center justify-center gap-2">
+                <span className="rounded-full border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-[var(--nexora-cyan)]">
+                  ÉTAPE {p.step}
+                </span>
+                <span className="text-[11px] uppercase tracking-wider text-white/50">
+                  {p.stepLabel}
+                </span>
+              </div>
               <div
                 className={`relative flex flex-col rounded-2xl border backdrop-blur-sm origin-bottom ${sizeClasses} ${
                   p.highlighted
