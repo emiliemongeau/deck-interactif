@@ -21,12 +21,10 @@ type Plan = {
 const plans: Plan[] = [
   {
     step: "01",
-    stepLabel: "Démarrer",
+    stepLabel: "",
     title: "Booster",
-    priceMain: "2 000 €",
-    priceStrike: "3 000 €",
-    priceSub: "setup + 250 € / mois",
-    priceExtra: "Commission NEXORA 5% du CA généré",
+    priceMain: "2 000 € setup",
+    priceSub: "+ Abonnement 290 € / mois",
     features: [
       "Module CA dormant",
       "Relances devis automatisées",
@@ -35,16 +33,15 @@ const plans: Plan[] = [
       "Formation & onboarding",
     ],
     cta: "Démarrer",
-    note: "Prix préférentiel sous conditions : confirmation sous 7 jours · 1 témoignage vidéo · 2 recommandations qualifiées",
+    note: "1 mois d'abonnement offert en échange d'une recommandation qualifiée",
     size: "sm",
   },
   {
     step: "02",
-    stepLabel: "Monter en puissance",
+    stepLabel: "",
     title: "L'agentique",
-    priceMain: "4 000 €",
-    priceSub: "setup + 300 € / mois",
-    priceExtra: "Commission NEXORA 5% du CA généré",
+    priceMain: "4 500 € setup",
+    priceSub: "+ Abonnement 390 € / mois",
     features: [
       "Tout le Booster",
       "Pilotage par message Telegram : envoyez une instruction, le système l'exécute",
@@ -59,10 +56,10 @@ const plans: Plan[] = [
   },
   {
     step: "03",
-    stepLabel: "Passer à l'échelle",
+    stepLabel: "",
     title: "Premium",
-    priceMain: "À partir de 10 000 €",
-    priceSub: "Sur mesure",
+    priceMain: "Sur devis",
+    priceSub: "Audit complet des process à réaliser en amont",
     features: [
       "Infrastructure IA multi-départements",
       "Commerciale, production, SAV",
