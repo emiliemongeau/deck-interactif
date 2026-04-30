@@ -17,7 +17,7 @@ import { Slide9Process } from "./slides/Slide9Process";
 import { Slide10Pricing } from "./slides/Slide10Pricing";
 import { Slide11Closing } from "./slides/Slide11Closing";
 
-const TOTAL = 15;
+const TOTAL = 14;
 
 const slides = [
   () => <Slide0Vision />,
@@ -34,7 +34,6 @@ const slides = [
   () => <Slide7Resultats />,
   () => <Slide9Process />,
   () => <Slide10Pricing />,
-  () => <Slide11Closing />,
 ];
 
 export function Presentation() {
