@@ -152,7 +152,7 @@ export function Slide10Pricing() {
               </div>
 
               {p.note && (
-                <div className="w-[270px] rounded-xl border border-[var(--nexora-cyan)]/30 bg-[var(--nexora-cyan)]/[0.06] p-3">
+                <div className="w-[340px] rounded-xl border border-[var(--nexora-cyan)]/30 bg-[var(--nexora-cyan)]/[0.06] p-3">
                   <p className="text-sm leading-relaxed text-white/80">
                     <span className="font-semibold text-[var(--nexora-cyan)]">Conditions :</span>{" "}
                     {p.note}
