@@ -52,23 +52,8 @@ const plans: Plan[] = [
     ],
     cta: "Démarrer",
     highlighted: true,
+    note: "1 mois d'abonnement offert en échange d'une recommandation qualifiée",
     size: "md",
-  },
-  {
-    step: "03",
-    stepLabel: "",
-    title: "Premium",
-    priceMain: "Sur devis",
-    priceSub: "Audit complet des process à réaliser en amont",
-    features: [
-      "Infrastructure IA multi-départements",
-      "Commerciale, production, SAV",
-      "RH, finances, approvisionnement",
-      "Déploiement sur mesure",
-      "Accompagnement long terme",
-    ],
-    cta: "Nous contacter",
-    size: "lg",
   },
 ];
 
