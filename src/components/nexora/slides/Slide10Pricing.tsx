@@ -20,7 +20,7 @@ type Plan = {
 
 const plans: Plan[] = [
   {
-    step: "01",
+    step: "JE DÉMARRE",
     stepLabel: "",
     title: "Booster",
     priceMain: "2 000 € setup",
@@ -37,7 +37,7 @@ const plans: Plan[] = [
     size: "md",
   },
   {
-    step: "02",
+    step: "JE PILOTE",
     stepLabel: "",
     title: "L'agentique",
     priceMain: "4 500 € setup",
@@ -90,7 +90,7 @@ export function Slide10Pricing() {
               )}
               <div className="flex items-center justify-center gap-2">
                 <span className="rounded-full border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-[var(--nexora-cyan)]">
-                  ÉTAPE {p.step}
+                  {p.step}
                 </span>
                 {p.stepLabel && (
                   <span className="text-[11px] uppercase tracking-wider text-white/50">
