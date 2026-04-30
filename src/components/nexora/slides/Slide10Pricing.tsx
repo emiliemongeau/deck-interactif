@@ -107,9 +107,11 @@ export function Slide10Pricing() {
                 <span className="rounded-full border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-[var(--nexora-cyan)]">
                   ÉTAPE {p.step}
                 </span>
-                <span className="text-[11px] uppercase tracking-wider text-white/50">
-                  {p.stepLabel}
-                </span>
+                {p.stepLabel && (
+                  <span className="text-[11px] uppercase tracking-wider text-white/50">
+                    {p.stepLabel}
+                  </span>
+                )}
               </div>
               <div
                 className={`relative flex flex-col rounded-2xl border backdrop-blur-sm ${sizeClasses} ${
