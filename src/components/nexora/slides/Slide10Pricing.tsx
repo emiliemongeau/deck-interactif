@@ -34,7 +34,7 @@ const plans: Plan[] = [
     ],
     cta: "Démarrer",
     note: "1 mois d'abonnement offert en échange d'une recommandation qualifiée",
-    size: "sm",
+    size: "md",
   },
   {
     step: "02",
