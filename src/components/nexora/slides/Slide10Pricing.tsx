@@ -21,12 +21,10 @@ type Plan = {
 const plans: Plan[] = [
   {
     step: "01",
-    stepLabel: "Démarrer",
+    stepLabel: "",
     title: "Booster",
-    priceMain: "2 000 €",
-    priceStrike: "3 000 €",
-    priceSub: "setup + 250 € / mois",
-    priceExtra: "Commission NEXORA 5% du CA généré",
+    priceMain: "2 000 € setup",
+    priceSub: "+ Abonnement 290 € / mois",
     features: [
       "Module CA dormant",
       "Relances devis automatisées",
@@ -35,16 +33,15 @@ const plans: Plan[] = [
       "Formation & onboarding",
     ],
     cta: "Démarrer",
-    note: "Prix préférentiel sous conditions : confirmation sous 7 jours · 1 témoignage vidéo · 2 recommandations qualifiées",
+    note: "1 mois d'abonnement offert en échange d'une recommandation qualifiée",
     size: "sm",
   },
   {
     step: "02",
-    stepLabel: "Monter en puissance",
+    stepLabel: "",
     title: "L'agentique",
-    priceMain: "4 000 €",
-    priceSub: "setup + 300 € / mois",
-    priceExtra: "Commission NEXORA 5% du CA généré",
+    priceMain: "4 500 € setup",
+    priceSub: "+ Abonnement 390 € / mois",
     features: [
       "Tout le Booster",
       "Pilotage par message Telegram : envoyez une instruction, le système l'exécute",
@@ -59,10 +56,10 @@ const plans: Plan[] = [
   },
   {
     step: "03",
-    stepLabel: "Passer à l'échelle",
+    stepLabel: "",
     title: "Premium",
-    priceMain: "À partir de 10 000 €",
-    priceSub: "Sur mesure",
+    priceMain: "Sur devis",
+    priceSub: "Audit complet des process à réaliser en amont",
     features: [
       "Infrastructure IA multi-départements",
       "Commerciale, production, SAV",
@@ -110,9 +107,11 @@ export function Slide10Pricing() {
                 <span className="rounded-full border border-[var(--nexora-cyan)]/40 bg-[var(--nexora-cyan)]/10 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-[var(--nexora-cyan)]">
                   ÉTAPE {p.step}
                 </span>
-                <span className="text-[11px] uppercase tracking-wider text-white/50">
-                  {p.stepLabel}
-                </span>
+                {p.stepLabel && (
+                  <span className="text-[11px] uppercase tracking-wider text-white/50">
+                    {p.stepLabel}
+                  </span>
+                )}
               </div>
               <div
                 className={`relative flex flex-col rounded-2xl border backdrop-blur-sm ${sizeClasses} ${
@@ -171,7 +170,7 @@ export function Slide10Pricing() {
                 <div className="w-[270px] rounded-xl border border-[var(--nexora-cyan)]/30 bg-[var(--nexora-cyan)]/[0.06] p-3">
                   <p className="text-sm leading-relaxed text-white/80">
                     <span className="font-semibold text-[var(--nexora-cyan)]">Conditions :</span>{" "}
-                    {p.note.replace("Prix préférentiel sous conditions : ", "")}
+                    {p.note}
                   </p>
                 </div>
               )}
