@@ -68,7 +68,7 @@ export function Slide10Pricing() {
         Choisissez votre niveau d'infrastructure
       </h2>
 
-      <div className="relative flex w-full max-w-7xl items-end justify-center gap-4">
+      <div className="relative flex w-full max-w-7xl items-end justify-center gap-10">
         {plans.map((p, idx) => {
           const sizeClasses =
             p.size === "sm"
